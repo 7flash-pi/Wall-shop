@@ -1,0 +1,20 @@
+.navbar{
+    margin-top: 1em;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--optionalColor);
+}
+
+.navbarList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbarList > ul{
+    list-style: none;
+    text-decoration: none;
+}
