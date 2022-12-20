@@ -6,11 +6,9 @@ const Navbar = () => {
     <div className='navbar'>
         <h3>WallisSell</h3>
         <div className="navbarList">
-            <ul>
-                <li> Login/SignUp </li>
-                <li> Prodcuts </li>
-                <li> Cart </li>
-            </ul>
+            <p> <a href='#'> Login/SignUp </a></p>
+            <p> <a href='#'> Prodcuts </a></p>
+            <p> <a href="#"> Cart </a></p>
         </div>
     </div>
   )
