@@ -1,0 +1,17 @@
+.category{
+    color: var(--tColor);
+    margin-top: 2rem;
+}
+.category > label{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+.categoryGrid{
+    margin-top: 2rem;
+    width: 100%;
+    height: 45vh;
+    box-shadow: var(--light-shadow);
+}
