@@ -1,5 +1,6 @@
 import React from 'react';
-import anime1 from '../category/anime/anime1.jpg'
+import anime1 from '../category/anime/anime1.jpg';
+import '../Styles/singleCategory.css'
 
 
 const SingleCategory = () => {
@@ -7,7 +8,7 @@ const SingleCategory = () => {
     <div className='singleCategory'>
         <p>Anime</p>
         <div className="imgContainer">
-            <img src={anime1} alt="#" />
+           <p>Hello</p>
         </div>
     </div>
   )
