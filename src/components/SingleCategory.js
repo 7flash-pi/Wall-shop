@@ -8,7 +8,7 @@ const SingleCategory = () => {
     <div className='singleCategory'>
         <p>Anime</p>
         <div className="imgContainer">
-           <p>Hello</p>
+           <img src={anime1} alt='anime'/>
         </div>
     </div>
   )

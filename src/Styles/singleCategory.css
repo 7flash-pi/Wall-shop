@@ -11,12 +11,14 @@
     letter-spacing: 0.3em;
 }
 .imgContainer{
-
-    width: 40vh;
-    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .imgContainer > img {
-    width: fit-content;
+    width: 35vh;
+    height: 60vh;
+    object-fit: contain;
 }
