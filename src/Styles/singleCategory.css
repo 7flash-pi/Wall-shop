@@ -13,21 +13,23 @@
     writing-mode: vertical-lr;
     text-orientation: upright;
     margin: 0 2em;
+    text-transform: capitalize;
 }
 .imgContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width:40vh ;
+    width:45vh ;
     height: 100%;
-    margin-left: 8em;
+    max-height: 80vh;
+    margin-right: 5em;
     
 }
 
 .imgContainer > img {
     width: 35vh;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
     padding: 5px;
 }
 .imgContainer > img:hover{

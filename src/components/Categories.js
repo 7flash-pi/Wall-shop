@@ -7,9 +7,9 @@ const Categories = () => {
     <div className='category'>
         <label>category</label>
         <div className="categoryGrid">
-          <SingleCategory name={anime}/>
-          <SingleCategory name={Nature}/>
-          <SingleCategory name={LandScape}/>
+          <SingleCategory name="anime"/>
+          <SingleCategory name="Nature"/>
+          <SingleCategory name="LandScape"/>
   
             
         </div>
