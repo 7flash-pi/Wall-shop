@@ -5,12 +5,12 @@ import { useGlobalContext } from '../context/context';
 
 const SingleCategory = ( {name} ) => {
 
-  const { catArr,fetchCategory }=useGlobalContext();
+  const { catArr,fetchCategory,setCatArr }=useGlobalContext();
 
   useEffect(()=>{
       fetchCategory(name);
       console.log(catArr);
-  },[])
+  },[name])
 
   return (
     <div className='singleCategory'>
@@ -18,7 +18,7 @@ const SingleCategory = ( {name} ) => {
         <div className="imgContainer">
          {
           catArr.map( img => 
-              <img src={img.imgPath} key={img.id} alt={name}/>
+              <img src={img.imgPath}  key={img.id} alt={name}/>
             )
          }
         </div>

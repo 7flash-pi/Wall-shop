@@ -13,8 +13,7 @@ const Categories = () => {
         <label>category</label>
         <div className="categoryGrid">
           <SingleCategory name="anime" />
-  
-            
+          <SingleCategory name="nature" />
         </div>
       
     </div>
