@@ -1,0 +1,6 @@
+.pageFooter{
+    height: 10em;
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+}

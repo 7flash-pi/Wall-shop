@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/categories.css';
 import SingleCategory from './SingleCategory';
+import PageFooter from './PageFooter';
 
 
 
