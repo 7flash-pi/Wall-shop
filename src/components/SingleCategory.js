@@ -1,16 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Styles/singleCategory.css';
-import { useGlobalContext } from '../context/context';
+import db from '../context/firebase';
+
+import { query,collection, onSnapshot} from 'firebase/firestore';
+
 
 
 const SingleCategory = ( {name} ) => {
 
-  const { catArr,fetchCategory,setCatArr }=useGlobalContext();
+  const [catArr,setCatArr]=useState([]);
+
+  const fetchCategory = async( name ) =>{
+    const q = query(collection(db, name.toString()));
+          const unsub = onSnapshot(q, (querySnapshot) => {
+              const newdata=querySnapshot.docs.map(d => d.data());
+              setCatArr(newdata);
+              console.log(newdata,name);
+          });
+  
+  }
+  
 
   useEffect(()=>{
       fetchCategory(name);
-      console.log(catArr);
-  },[name])
+  },[catArr])
 
   return (
     <div className='singleCategory'>

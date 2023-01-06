@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../Styles/categories.css';
 import SingleCategory from './SingleCategory';
 
@@ -13,7 +13,8 @@ const Categories = () => {
         <label>category</label>
         <div className="categoryGrid">
           <SingleCategory name="anime" />
-          <SingleCategory name="nature" />
+          <SingleCategory name="nature"  className='middle'/>
+          <SingleCategory name="games" />
         </div>
       
     </div>

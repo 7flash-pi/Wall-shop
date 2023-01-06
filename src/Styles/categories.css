@@ -14,3 +14,6 @@
     width: 100%;
     height: 45vh;
 }
+.categoryGrid > .middle{
+    margin: 1em 0;
+}
